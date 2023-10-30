@@ -1,0 +1,86 @@
+/* Define o estilo padrão para todo o corpo do documento HTML. */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte de texto para o corpo. */
+    margin: 0; /* Remove as margens padrão do corpo. */
+    padding: 0; /* Remove o preenchimento padrão do corpo. */
+    background-color: #f4f4f4; /* Define a cor de fundo para um cinza claro. */
+    display: flex; /* Usa o modelo de layout flexbox. */
+    flex-direction: column; /* Organiza os elementos em coluna. */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da janela de visualização. */
+}
+
+/* Define o estilo para o cabeçalho (header) do documento. */
+header {
+    background-color: #333; /* Define a cor de fundo para um tom escuro. */
+    margin-top: 60px;
+    color: #fff; /* Define a cor do texto como branco. */
+    text-align: center; /* Centraliza o conteúdo de texto no cabeçalho. */
+    padding: 1rem; /* Adiciona preenchimento interno ao redor do conteúdo do cabeçalho. */
+}
+
+/* Define o estilo para a seção principal (main) do documento. */
+main {
+    flex: 1; /* Expande a seção principal para ocupar todo o espaço disponível. */
+    display: flex; /* Usa o modelo de layout flexbox. */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo da seção principal. */
+    align-items: center; /* Centraliza verticalmente o conteúdo da seção principal. */
+    padding-bottom: 60px; /* Adiciona espaço extra na parte inferior para acomodar o rodapé. */
+}
+
+/* Define o estilo para o rodapé (footer) do documento. */
+footer {
+    background-color: #333; /* Define a cor de fundo para um tom escuro. */
+    color: #fff; /* Define a cor do texto como branco. */
+    text-align: center; /* Centraliza o conteúdo de texto no rodapé. */
+    padding: 0.5rem; /* Adiciona preenchimento interno ao redor do conteúdo do rodapé. */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura disponível. */
+    bottom: 0; /* Mantém o rodapé na parte inferior da janela de visualização. */
+}
+#search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Cor de fundo da barra de busca */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 999; /* Certifica-se de que a barra de busca esteja acima de outros elementos */
+}
+
+#search-bar input[type="text"] {
+    width: 70%; /* Largura do campo de entrada de texto */
+    padding: 5px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+#search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer;
+}
+
+/* Estilo hover para o botão (opcional) */
+#search-bar button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Adicione este CSS para estilizar os gráficos */
+#chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.google-visualization-table {
+    max-width: 400px; /* Defina a largura máxima desejada para cada gráfico */
+    margin: 16px; /* Adicione margem entre os gráficos */
+}
+
+/* Estilize o título dos gráficos (opcional) */
+.google-visualization-table h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
